@@ -1,0 +1,38 @@
+<nodebird>
+1. package.json파일 생성
+=> npm init
+=> main속성과 script객체의 start속성 수정
+
+2. 필요한 패키지들 설치
+npm i express nunjucks morgan sequelize sequelize-cli mysql2 dotenv
+
+나중에 : npm install express-session nunjucks morgan cookie-parser sequelize sequelize-cli mysql2 multer
+
+3. 편리하게 재시작해주는 노드몬 설치
+npm i -D nodemon
+
+4. 데이터베이스의 릴레이션과 자바스크립트 객체를 ORM으로 매핑해주는 라이브러리 sequelize를 init
+npx sequelize init
+=> config, migrations, models, seeders폴더가 생김
+
+5. models/index.js 파일을 수정
+
+6. app.js를 생성하여 익스프레스와 시퀄라이즈 연결
+- require로 모듈 불러오기
+- set으로 포트, 템플릿엔진 설정
+- sequelize를 sync로 db연결
+- use로 사용할 모듈 설정
+- use로 404에러와 그 외의 에러 처리
+- listen으로 서버 연동
+
+7. config/config.json파일에 데이터베이스 설정
+
+8. 모델 정의하기(mysql의 테이블은 시퀄라이즈의 모델과 대응)
+=> 기본적으로 시퀄라이즈는 model은 단수형으로 테이블의 이름은 복수형으로 사용한다.
+models폴더의 js파일들에 모델을 정의
+
+9. 모델들을 생성한 후 models/index.js와 연결
+models/index.js수정
+
+10. 각각의 model들에 관계 정의하기
+ex) 일대다, 일대일, 다대다
