@@ -14,6 +14,7 @@ npm i -D nodemon
 4. 데이터베이스의 릴레이션과 자바스크립트 객체를 ORM으로 매핑해주는 라이브러리 sequelize를 init
 npx sequelize init
 => config, migrations, models, seeders폴더가 생김
+=> 추가로 views, public, routes폴더 생성
 
 5. models/index.js 파일을 수정
 

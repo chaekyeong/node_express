@@ -1,0 +1,12 @@
+1. views폴더안에 html파일 만들기
+
+2. public폴더 안에 sequelize.js파일 만들기
+
+3. 조금 뒤에 만들 라우터들을 미리 app.js에 연결
+
+4. routes폴더의 js파일들에 라우터들을 작성
+=> sequelize.js에 나오는 GET, POST, PUT, DELETE요청에 해당하는 라우터들을 만든다.
+
+ + 콘솔창에서 sql구문을 보고 싶지 않다면 config/config.json의 dialect속성 밑에 "logging": false를 추가
+
+5. npm start
